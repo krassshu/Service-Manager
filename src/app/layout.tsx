@@ -23,8 +23,8 @@ export default function RootLayout({
       <Header/>
       <Breadcrumb/>
       <Sidebar/>
-      <main className="w-full lg:ps-64">
-          <div className="p-4 sm:p-6 space-y-4 sm:space-y-6 bg-gray-50">
+      <main className="w-full lg:ps-64 dark:bg-slate-900">
+          <div className="p-4 sm:p-6 space-y-4 sm:space-y-6">
               {children}
           </div>
       </main>

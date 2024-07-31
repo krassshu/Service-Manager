@@ -13,11 +13,9 @@ export default function Home() {
         <DashboardElements>
             <DashboardTasks/>
         </DashboardElements>
-        <DashboardElements>
+        <DashboardElements className="col-span-3">
             <DashboardCalendar/>
         </DashboardElements>
-        <DashboardElements>05</DashboardElements>
-        <DashboardElements>06</DashboardElements>
       </div>
   );
 }

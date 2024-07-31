@@ -13,7 +13,7 @@ export default function DashboardTasks() {
                         <th className='border-b dark:border-gray-200 font-medium  pr-8 pt-0 pb-3 text-slate-400 dark:text-slate-200 text-left'>Upcoming date</th>
                     </tr>
                 </thead>
-                <tbody className='bg-white dark:bg-neutral-700'>
+                <tbody className='bg-white dark:bg-slate-400'>
                     <tr>
                         <td className='p-1 pl-8'><Link href={'/'} className='hover:underline'>239828</Link></td>
                         <td>Bydgoszcz</td>
