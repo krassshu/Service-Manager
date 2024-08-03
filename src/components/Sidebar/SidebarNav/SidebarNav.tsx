@@ -40,11 +40,11 @@ export default function SidebarNav(){
                 <li>
                     <Link href={"/tasks"}
                           className={`${currentPath === '/tasks' ? "bg-gray-100 dark:bg-slate-400 dark:text-white" : "text-gray-800 dark:bg-slate-900 dark:text-neutral-200"} w-full text-start flex items-center gap-x-3.5 py-2 px-2.5 text-sm  rounded-lg hover:bg-gray-100   dark:hover:bg-slate-400 `}>
-                        <svg className="shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                        <svg className="shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="26" height="26"
                              viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round"
                              strokeLinejoin="round">
-                            <path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
-                            <polyline points="9 22 9 12 15 12 15 22"/>
+                            <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2"
+                                  d="M15 4h3a1 1 0 0 1 1 1v15a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1h3m0 3h6m-3 5h3m-6 0h.01M12 16h3m-6 0h.01M10 3v4h4V3h-4Z"/>
                         </svg>
                         Tasks
                     </Link>

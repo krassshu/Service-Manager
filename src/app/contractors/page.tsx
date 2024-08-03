@@ -6,8 +6,8 @@ export default function Contractors(){
         <>
             <div role="navigation" aria-label="Main" className="w-full bg-white dark:bg-gray-800 py-5 flex flex-col xl:flex-row items-start xl:items-center justify-between px-5 xl:px-10 shadow rounded-t">
                 <div className="mb-4 sm:mb-0 md:mb-0 lg:mb-0 xl:mb-0 lg:w-1/2">
-                    <a tabIndex="0" className="focus:outline-none  text-gray-800 dark:text-gray-100 text-lg font-bold">List of contractors</a>
-                    <p tabIndex="0" className="focus:outline-none font-normal text-sm text-gray-600 dark:text-gray-100 mt-1">Uncommon people with a whole lot in common</p>
+                    <a  className="focus:outline-none  text-gray-800 dark:text-gray-100 text-lg font-bold">List of contractors</a>
+                    <p className="focus:outline-none font-normal text-sm text-gray-600 dark:text-gray-100 mt-1">Uncommon people with a whole lot in common</p>
                 </div>
                 <div className="block lg:justify-end lg:w-auto sm:flex sm:justify-center sm:w-full   mt-3 sm:mt-2 " >
                     <button className="rounded-md bg-white dark:bg-gray-800 px-2.5 py-1.5 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset border-1 ring-gray-300 hover:bg-gray-50 dark:text-neutral-200 hover:dark:text-neutral-200 dark:hover:bg-slate-400 sm:block">Add new contractor</button>
