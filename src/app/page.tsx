@@ -2,20 +2,40 @@ import Image from "next/image";
 import DashboardElements from "@/components/DashboardElements/DashboardElements";
 import DashboardCalendar from "@/components/DashboardElements/DashboardCalendar/DashboardCalendar";
 import DashboardTasks from "@/components/DashboardElements/DashboardTasks/DashboardTasks";
-import DashboardActiveTasks from "@/components/DashboardElements/DashboardActiveTasks/DashboardActiveTasks";
+import TaskInterface from "@/interfaces/taskInterface";
+import DashboardMessage from "@/components/DashboardElements/DashboardMessage/DashboardMessage";
+
 export default function Home() {
-  return (
-      <div className="grid gap-4 xl:grid-cols-3 md:grid-cols-2 sm:grid-cols-1">
-        <DashboardElements>
-            <DashboardActiveTasks/>
-        </DashboardElements>
-        <DashboardElements>02</DashboardElements>
-        <DashboardElements>
-            <DashboardTasks/>
-        </DashboardElements>
-        <DashboardElements className="col-span-3">
-            <DashboardCalendar/>
-        </DashboardElements>
-      </div>
-  );
+
+   const tasks:TaskInterface={
+        title:"Assigned tasks",
+        head1:"Task number",
+        head2:"Localization",
+        head3:"Quantity",
+        taskValue:[{
+            taskNumber: 12312,
+            localization: 'Bydgoszcz',
+            taskInfo: 21
+        }]
+    }
+
+    return (
+        <div className="grid gap-4 xl:grid-cols-3 md:grid-cols-2 grid-cols-1">
+            <DashboardElements>
+                <DashboardTasks {...tasks}/>
+            </DashboardElements>
+            <DashboardElements>
+                <DashboardTasks {...tasks}/>
+            </DashboardElements>
+            <DashboardElements>
+                <DashboardTasks {...tasks}/>
+            </DashboardElements>
+            <DashboardElements className="col-span-1 xl:col-span-2 md:col-span-2 sm:col-span-1">
+                <DashboardCalendar/>
+            </DashboardElements>
+            <DashboardElements className="col-span-1 sm:col-span-1 xl:col-span-1">
+                <DashboardMessage/>
+            </DashboardElements>
+        </div>
+    );
 }
