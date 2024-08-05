@@ -1,4 +1,4 @@
-export default function SearchProtocols(){
+export default function SearchInsideInput(){
 
     return (
     <div className="block">

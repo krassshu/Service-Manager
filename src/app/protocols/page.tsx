@@ -1,5 +1,5 @@
 import Protocols from "@/components/Protocols/Protocols";
-import SearchProtocols from "@/components/Protocols/SearchProtocols";
+import SearchInsideInput from "@/components/SearchInsideInput/SearchInsideInput";
 import FilterProtocols from "@/components/Protocols/FilterProtocols";
 import Sort from "@/components/Sort/Sort";
 
@@ -27,7 +27,7 @@ export default function page() {
         <>
             <div className="w-full bg-white dark:bg-gray-800 py-5 flex flex-col xl:flex-row xl:items-center justify-between px-5 xl:px-10 shadow rounded-t">
                 <div className="mb-4 sm:mb-0 md:mb-0 lg:mb-0 xl:mb-0 ">
-                    <SearchProtocols/>
+                    <SearchInsideInput/>
                 </div>
                 <div className="flex items-center lg:justify-end lg:w-auto sm:justify-center sm:w-full mt-3 sm:mt-2 ">
                     <FilterProtocols/>

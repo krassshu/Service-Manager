@@ -26,7 +26,7 @@ export default function FilterProtocols() {
                 onClick={handleButtonClick}
             >
                 <span className="flex items-center">
-                  <span className="ml-3 block truncate">{selectedOption || 'Select locations'}</span>
+                  <span className="ml-3 block truncate">{selectedOption || 'All locations'}</span>
                 </span>
                 <span className="pointer-events-none absolute inset-y-0 right-0 ml-3 flex items-center pr-2">
                   <svg className="h-5 w-5 text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">

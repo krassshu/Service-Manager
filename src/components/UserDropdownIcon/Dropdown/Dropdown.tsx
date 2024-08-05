@@ -8,7 +8,7 @@ import Avatar from "@/image/avatar.avif"
 import {useState} from "react";
 
 export default function Dropdown(){
-    const [isOpen, setIsOpen] = useState(true);
+    const [isOpen, setIsOpen] = useState(false);
     return(
         <div className="hs-dropdown [--placement:bottom-right] relative inline-flex">
             <button  onClick={()=>{setIsOpen(!isOpen)}} type="button" className="size-[38px] inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-full border border-transparent text-gray-800 focus:outline-none disabled:opacity-50 disabled:pointer-events-none dark:text-white" aria-haspopup="menu" aria-expanded="false" aria-label="Dropdown">
