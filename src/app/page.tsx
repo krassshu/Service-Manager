@@ -30,10 +30,10 @@ export default function Home() {
             <DashboardElements>
                 <DashboardTasks {...tasks}/>
             </DashboardElements>
-            <DashboardElements className="col-span-1 xl:col-span-2 md:col-span-2 sm:col-span-1">
+            <DashboardElements className="col-span-1 xl:col-span-2 md:col-span-2 sm:col-span-1 order-2 xl:order-1">
                 <DashboardCalendar/>
             </DashboardElements>
-            <DashboardElements className="col-span-1 sm:col-span-1 xl:col-span-1">
+            <DashboardElements className="col-span-1 sm:col-span-1 xl:col-span-1 order-1 xl:order-2">
                 <DashboardMessage/>
             </DashboardElements>
         </div>
