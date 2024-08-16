@@ -84,19 +84,6 @@ export default function SidebarNav(){
                     </Link>
                 </li>
                 <li>
-                    <Link
-                        className="w-full flex items-center gap-x-3.5 py-2 px-2.5 text-sm text-gray-800 rounded-lg hover:bg-gray-100 dark:hover:bg-neutral-900 dark:text-neutral-200 dark:hover:text-neutral-300"
-                        href="#">
-                        <svg className="shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                             viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round"
-                             strokeLinejoin="round">
-                            <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/>
-                            <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/>
-                        </svg>
-                        Documentation
-                    </Link>
-                </li>
-                <li>
                     <Link href={"/messages"}
                           className={`${currentPath === '/messages' ? "bg-gray-100 dark:bg-slate-400 dark:text-white" : "text-gray-800 dark:bg-slate-900 dark:text-neutral-200"} w-full text-start flex items-center gap-x-3.5 py-2 px-2.5 text-sm  rounded-lg hover:bg-gray-100   dark:hover:bg-slate-400 `}>
                         <svg className="shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="28" height="28"

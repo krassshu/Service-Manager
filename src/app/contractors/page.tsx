@@ -17,7 +17,7 @@ export default function Contractors(){
                 <li className="flex items-center justify-between gap-x-6 py-5">
                     <div className="min-w-0">
                         <div className="flex items-start gap-x-3">
-                            <p className="text-sm font-semibold leading-6 text-gray-900 dark:text-neutral-200" ><Link href={''}>Bydgoszcz</Link></p>
+                            <p className="text-sm font-semibold leading-6 text-gray-900 dark:text-neutral-200" ><Link href={'contractors/bydgoszcz'}>Bydgoszcz</Link></p>
                             <p className="rounded-md whitespace-nowrap mt-0.5 px-1.5 py-0.5 text-xs font-medium ring-1 ring-inset text-green-700 bg-green-50 ring-green-600/20" title='Number of orders'>123</p>
                         </div>
                         <div className="mt-1 flex items-center gap-x-2 text-xs leading-5 text-gray-500 dark:text-neutral-400">

@@ -40,17 +40,17 @@ export default function TasksOrder(){
                             </select>
                         </div>
                         <ul role="list" className="hidden lg:flex items-center lg:mt-6 xl:mt-0">
-                            <button role="listitem" tabIndex="0"
+                            <button role="listitem" tabIndex={0}
                                     className=" focus:ring-2 focus:ring-offset-2 focus:ring-gray-400 focus:outline-none font-normal flex justify-center items-center py-2 px-4 rounded mr-4 xl:mr-0 xl:ml-0 bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-100 text-sm">Active
                             </button>
-                            <button role="listitem" tabIndex="0"
+                            <button role="listitem" tabIndex={0}
                                     className=" focus:ring-2 focus:ring-offset-2 focus:ring-gray-400 focus:outline-none cursor-pointer font-normal flex justify-center items-center py-2 px-4 rounded mr-4 sm:mr-0 md:mr-0 lg:mr-0 xl:mr-0 sm:ml-4 md:ml-4 lg:ml-4 xl:ml-4 hover:bg-gray-200 dark:hover:bg-gray-700 text-gray-500 dark:text-gray-400 text-sm">Inactive
                             </button>
-                            <button role="listitem" tabIndex="0"
+                            <button role="listitem" tabIndex={0}
                                     className="focus:ring-2 focus:ring-offset-2 focus:ring-gray-400 focus:outline-none cursor-pointer font-normal flex justify-center items-center py-2 px-4 rounded mr-4 sm:mr-0 md:mr-0 lg:mr-0 xl:mr-0 sm:ml-4 md:ml-4 lg:ml-4 xl:ml-4 hover:bg-gray-200 dark:hover:bg-gray-700 text-gray-500 dark:text-gray-400 text-sm">In
                                 progress
                             </button>
-                            <button role="listitem" tabIndex="0"
+                            <button role="listitem" tabIndex={0}
                                     className=" focus:ring-2 focus:ring-offset-2 focus:ring-gray-400 focus:outline-none cursor-pointer font-normal flex justify-center items-center py-2 px-4 rounded mr-4 sm:mr-0 md:mr-0 lg:mr-0 xl:mr-0 sm:ml-4 md:ml-4 lg:ml-4 xl:ml-4 hover:bg-gray-200 dark:hover:bg-gray-700 text-gray-500 dark:text-gray-400 text-sm">Done
                             </button>
                         </ul>
