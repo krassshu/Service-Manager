@@ -3,6 +3,7 @@ import FilterProtocols from "@/components/Protocols/FilterProtocols";
 import Sort from "@/components/Sort/Sort";
 import DeviceElementToCheck from "@/components/DeviceElementToCheck/DeviceElementToCheck";
 import StatusInfo from "@/UI/StatusInfo";
+import ModalProvider from "@/context/ModalProvider";
 
 export default function TasksOrder(){
 
@@ -60,8 +61,8 @@ export default function TasksOrder(){
                 <StatusInfo/>
             </div>
             <ul role="list" className="divide-y divide-gray-100">
-                <DeviceElementToCheck/>
-                <DeviceElementToCheck/>
+                    <DeviceElementToCheck/>
+                    <DeviceElementToCheck/>
             </ul>
         </>
     )

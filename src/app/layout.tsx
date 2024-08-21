@@ -4,7 +4,9 @@ import "./globals.css";
 import Header from "@/components/Header/Header";
 import Breadcrumb from "@/components/Breadcrumb/Breadcrumb";
 import Sidebar from "@/components/Sidebar/Sidebar";
-import SidebarProvider from "@/components/SidebarProvider/SidebarProvider";
+import SidebarProvider from "@/context/SidebarProvider";
+import ModalProvider from "@/context/ModalProvider";
+import ModalKeeper from "@/components/ModalKeeper/ModalKeeper";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -20,17 +22,20 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>
-      <Header/>
-      <SidebarProvider>
-          <Breadcrumb/>
-          <Sidebar/>
-      </SidebarProvider>
-      <main className="w-full lg:ps-64 dark:bg-slate-900">
-          <div className="p-4 sm:p-6 space-y-4 sm:space-y-6">
-              {children}
-          </div>
-      </main>
+      <body className={inter.className} id="__next">
+      <ModalProvider>
+          <ModalKeeper/>
+          <Header/>
+          <SidebarProvider>
+              <Breadcrumb/>
+              <Sidebar/>
+          </SidebarProvider>
+          <main className="w-full lg:ps-64 dark:bg-slate-900">
+              <div className="p-4 sm:p-6 space-y-4 sm:space-y-6">
+                  {children}
+              </div>
+          </main>
+      </ModalProvider>
       </body>
     </html>
   );

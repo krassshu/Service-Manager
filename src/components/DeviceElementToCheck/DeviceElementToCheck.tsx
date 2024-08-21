@@ -1,8 +1,12 @@
-import Link from "next/link";
-import ContractorsOptions from "@/components/Contractors/ContractorsOptions";
+'use client'
+
 import Button from "@/UI/Button"
+import {useContext} from "react";
+import {ModalContext} from "@/context/ModalProvider";
 
 export default function DeviceElementToCheck(){
+
+    const { toggleModal } = useContext(ModalContext);
 
     return (
 
@@ -23,9 +27,9 @@ export default function DeviceElementToCheck(){
                     </div>
                 </div>
                 <div className="flex flex-none items-center gap-x-4">
-                    <Link href="tasks/123332"
-                          className="rounded-md bg-white dark:bg-gray-800 px-2.5 py-1.5 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset border-1 ring-gray-300 hover:bg-gray-50 dark:text-neutral-200 hover:dark:text-neutral-200 dark:hover:bg-slate-400 sm:block">
-                        Complete the protocol</Link>
+                    <div onClick={toggleModal}>
+                        <Button>Complete the protocol</Button>
+                    </div>
                     <div className="relative flex-none">
                         <Button>Edit</Button>
                     </div>

@@ -3,7 +3,7 @@
 import { useContext } from "react";
 import Link from "next/link";
 import SidebarNav from "@/components/Sidebar/SidebarNav/SidebarNav";
-import { SidebarContext } from "@/components/SidebarProvider/SidebarProvider";
+import { SidebarContext } from "@/context/SidebarProvider";
 
 export default function Sidebar() {
     const { isSidebarOpen } = useContext(SidebarContext);
