@@ -7,7 +7,7 @@ export default function SidebarNav(){
     const currentPath = usePathname();
 
     return(
-        <nav className="hs-accordion-group p-3 w-full flex flex-col flex-wrap" data-hs-accordion-always-open>
+        <nav className="hs-accordion-group p-3 w-full flex flex-col flex-wrap">
             <ul className="flex flex-col space-y-1">
                 <li>
                     <Link
@@ -24,7 +24,7 @@ export default function SidebarNav(){
                 </li>
                 <li>
                     <Link href={'/contractors'} type="button"
-                          className={`${currentPath === '/contractors' ? "bg-gray-100 dark:bg-slate-400 dark:text-white" : "text-gray-800 dark:bg-slate-900 dark:text-neutral-200"}  w-full text-start flex items-center gap-x-3.5 py-2 px-2.5 text-sm  rounded-lg hover:bg-gray-100   dark:hover:bg-slate-400 `}
+                          className={`${currentPath.startsWith('/contractors') ? "bg-gray-100 dark:bg-slate-400 dark:text-white" : "text-gray-800 dark:bg-slate-900 dark:text-neutral-200"}  w-full text-start flex items-center gap-x-3.5 py-2 px-2.5 text-sm  rounded-lg hover:bg-gray-100   dark:hover:bg-slate-400 `}
                           aria-expanded="true" aria-controls="users-accordion-child">
                         <svg className="shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                              viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round"
@@ -39,7 +39,7 @@ export default function SidebarNav(){
                 </li>
                 <li>
                     <Link href={"/tasks"}
-                          className={`${currentPath === '/tasks' ? "bg-gray-100 dark:bg-slate-400 dark:text-white" : "text-gray-800 dark:bg-slate-900 dark:text-neutral-200"} w-full text-start flex items-center gap-x-3.5 py-2 px-2.5 text-sm  rounded-lg hover:bg-gray-100   dark:hover:bg-slate-400 `}>
+                          className={`${currentPath.startsWith('/tasks') ? "bg-gray-100 dark:bg-slate-400 dark:text-white" : "text-gray-800 dark:bg-slate-900 dark:text-neutral-200"} w-full text-start flex items-center gap-x-3.5 py-2 px-2.5 text-sm  rounded-lg hover:bg-gray-100   dark:hover:bg-slate-400 `}>
                         <svg className="shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="26" height="26"
                              viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round"
                              strokeLinejoin="round">
@@ -52,7 +52,7 @@ export default function SidebarNav(){
 
                 <li>
                     <Link href={"/protocols"}
-                          className={`${currentPath === '/protocols' ? "bg-gray-100 dark:bg-slate-400 dark:text-white" : "text-gray-800 dark:bg-slate-900 dark:text-neutral-200"} w-full text-start flex items-center gap-x-3.5 py-2 px-2.5 text-sm  rounded-lg hover:bg-gray-100   dark:hover:bg-slate-400 `}>
+                          className={`${currentPath.startsWith('/protocols') ? "bg-gray-100 dark:bg-slate-400 dark:text-white" : "text-gray-800 dark:bg-slate-900 dark:text-neutral-200"} w-full text-start flex items-center gap-x-3.5 py-2 px-2.5 text-sm  rounded-lg hover:bg-gray-100   dark:hover:bg-slate-400 `}>
                         <svg className="shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                              viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round"
                              strokeLinejoin="round">
@@ -63,9 +63,7 @@ export default function SidebarNav(){
                     </Link>
                 </li>
                 <li>
-                    <Link
-                        className="w-full flex items-center gap-x-3.5 py-2 px-2.5 text-sm text-gray-800 rounded-lg hover:bg-gray-100 dark:hover:bg-slate-400 dark:text-neutral-200 dark:hover:text-neutral-300"
-                        href={"/calendar"}>
+                    <Link href={"/calendar"} className={`${currentPath.startsWith('/calendar') ? "bg-gray-100 dark:bg-slate-400 dark:text-white" : "text-gray-800 dark:bg-slate-900 dark:text-neutral-200"} w-full flex items-center gap-x-3.5 py-2 px-2.5 text-sm text-gray-800 rounded-lg hover:bg-gray-100 dark:hover:bg-slate-400 dark:text-neutral-200 dark:hover:text-neutral-300`}>
                         <svg className="shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                              viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round"
                              strokeLinejoin="round">
@@ -85,7 +83,7 @@ export default function SidebarNav(){
                 </li>
                 <li>
                     <Link href={"/messages"}
-                          className={`${currentPath === '/messages' ? "bg-gray-100 dark:bg-slate-400 dark:text-white" : "text-gray-800 dark:bg-slate-900 dark:text-neutral-200"} w-full text-start flex items-center gap-x-3.5 py-2 px-2.5 text-sm  rounded-lg hover:bg-gray-100   dark:hover:bg-slate-400 `}>
+                          className={`${currentPath.startsWith('/messages') ? "bg-gray-100 dark:bg-slate-400 dark:text-white" : "text-gray-800 dark:bg-slate-900 dark:text-neutral-200"} w-full text-start flex items-center gap-x-3.5 py-2 px-2.5 text-sm  rounded-lg hover:bg-gray-100   dark:hover:bg-slate-400 `}>
                         <svg className="shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="28" height="28"
                              viewBox="0 0 20 20" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round"
                              strokeLinejoin="round">
@@ -93,6 +91,18 @@ export default function SidebarNav(){
                                   d="M9 17h6l3 3v-3h2V9h-2M4 4h11v8H9l-3 3v-3H4V4Z"/>
                         </svg>
                         Messages
+                    </Link>
+                </li>
+                <li>
+                    <Link href={"/admin-panel"}
+                          className={`${currentPath.startsWith('/admin-panel') ? "bg-gray-100 dark:bg-slate-400 dark:text-white" : "text-gray-800 dark:bg-slate-900 dark:text-neutral-200"} w-full text-start flex items-center gap-x-3.5 py-2 px-2.5 text-sm  rounded-lg hover:bg-gray-100   dark:hover:bg-slate-400 `}>
+                        <svg className="shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="28" height="28"
+                             viewBox="0 0 20 20" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round"
+                             strokeLinejoin="round">
+                            <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2"
+                                  d="M9 17h6l3 3v-3h2V9h-2M4 4h11v8H9l-3 3v-3H4V4Z"/>
+                        </svg>
+                        Admin Panel
                     </Link>
                 </li>
             </ul>
