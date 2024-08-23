@@ -1,7 +1,7 @@
 "use client";
 
 import { useContext } from "react";
-import { SidebarContext } from "@/context/SidebarProvider";
+import { SidebarContext } from "@/context/SidebarContext";
 
 export default function Breadcrumb() {
     const { toggleSidebar } = useContext(SidebarContext);

@@ -2,14 +2,17 @@
 
 import Button from "@/UI/Button"
 import {useContext} from "react";
-import {ModalContext} from "@/context/ModalProvider";
+import {useModal} from "@/context/ModalContext";
+import ProtocolForm from "@/components/ProtocolForm/ProtocolForm";
 
 export default function DeviceElementToCheck(){
 
-    const { toggleModal } = useContext(ModalContext);
+    const { openModal } = useModal();
 
+    const handleOpenModal = () => {
+        openModal(<ProtocolForm/>);
+    };
     return (
-
             <li className="flex items-center justify-between gap-x-6 py-5">
                 <div className="min-w-0">
                     <div className="flex items-center gap-x-3">
@@ -27,7 +30,7 @@ export default function DeviceElementToCheck(){
                     </div>
                 </div>
                 <div className="flex flex-none items-center gap-x-4">
-                    <div onClick={toggleModal}>
+                    <div onClick={handleOpenModal}>
                         <Button>Complete the protocol</Button>
                     </div>
                     <div className="relative flex-none">

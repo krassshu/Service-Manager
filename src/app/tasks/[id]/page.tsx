@@ -3,7 +3,7 @@ import FilterProtocols from "@/components/Protocols/FilterProtocols";
 import Sort from "@/components/Sort/Sort";
 import DeviceElementToCheck from "@/components/DeviceElementToCheck/DeviceElementToCheck";
 import StatusInfo from "@/UI/StatusInfo";
-import ModalProvider from "@/context/ModalProvider";
+import ModalContext from "@/context/ModalContext";
 
 export default function TasksOrder(){
 
