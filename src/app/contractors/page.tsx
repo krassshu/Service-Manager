@@ -1,5 +1,6 @@
 import Link from "next/link";
 import ContractorsOptions from "@/components/Contractors/ContractorsOptions";
+import AddNewContractors from "@/components/Contractors/AddNewContractors/AddNewContractors";
 
 export default function Contractors(){
     return (
@@ -10,7 +11,7 @@ export default function Contractors(){
                     <p className="focus:outline-none font-normal text-sm text-gray-600 dark:text-gray-100 mt-1">Uncommon people with a whole lot in common</p>
                 </div>
                 <div className="block lg:justify-end lg:w-auto sm:flex sm:justify-center sm:w-full   mt-3 sm:mt-2 " >
-                    <button className="rounded-md bg-white dark:bg-gray-800 px-2.5 py-1.5 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset border-1 ring-gray-300 hover:bg-gray-50 dark:text-neutral-200 hover:dark:text-neutral-200 dark:hover:bg-slate-400 sm:block">Add new contractor</button>
+                    <AddNewContractors/>
                 </div>
             </div>
             <ul role="list" className="divide-y divide-gray-100">
