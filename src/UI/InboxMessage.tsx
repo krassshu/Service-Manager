@@ -19,7 +19,7 @@ export default function InboxMessage(){
                             <div className='flex justify-between items-end gap-1'>
                                 <p className="mt-1 truncate text-xs leading-5 text-gray-500 dark:text-neutral-400">Lorem
                                     Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
-                                    been the industry's standard dummy text ever since the 1500s, when an unknown
+                                    been the industry`s standard dummy text ever since the 1500s, when an unknown
                                     printer
                                     took a galley of type and scrambled it to make a type specimen book. It has survived
                                     not

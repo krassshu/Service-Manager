@@ -9,7 +9,7 @@ export default function Home() {
 
    const tasks:TaskInterface={
         title:"Assigned tasks",
-        head1:"Task number",
+        head1:"Tasks number",
         head2:"Localization",
         head3:"Quantity",
         taskValue:[{

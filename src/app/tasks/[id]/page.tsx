@@ -5,7 +5,7 @@ import DeviceElementToCheck from "@/components/DeviceElementToCheck/DeviceElemen
 import StatusInfo from "@/UI/StatusInfo";
 import ModalContext from "@/context/ModalContext";
 
-export default function TasksOrder(){
+export default function TasksOrderPage(){
 
     return(
         <>

@@ -1,11 +1,6 @@
-import {useEffect} from "react";
 import {countries} from "@/components/Contractors/AddNewContractorForm/counties";
 
 export default function AddNewContractorForm(){
-    let countriesList
-    useEffect(() => {
-        countriesList = countries
-    }, []);
 
     return(
         <>
