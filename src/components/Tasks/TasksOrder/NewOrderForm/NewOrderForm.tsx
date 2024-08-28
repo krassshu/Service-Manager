@@ -1,5 +1,5 @@
 'use client'
-import DataPicker from "@/components/Tasks/TasksOrder/NewOrderForm/DataPicker";
+import DataPicker from "@/utils/DataPicker";
 import SelectContractor from "@/components/Tasks/TasksOrder/NewOrderForm/SelectContractor";
 import SelectDevice from "@/components/Tasks/TasksOrder/NewOrderForm/SelectDevice/SelectDevice";
 import Button from "@/UI/Button";
@@ -17,7 +17,7 @@ export default function NewOrderForm(){
             <form className='flex flex-col gap-3'>
                 <div>
                     <span>Select date</span>
-                    <DataPicker/>
+                    <DataPicker fromDisable={false} toDisable={false} allDisable={false}/>
                 </div>
                 <div>
                     <span>Select contractor</span>
