@@ -1,6 +1,6 @@
 'use client'
 
-import DataPicker from "@/utils/DataPicker";
+import DataPicker from "@/UI/DataPicker";
 import {useState} from "react";
 
 export default function PickEventRange(){

@@ -68,6 +68,7 @@ export default function DataPicker({ fromDisable, toDisable, allDisable }: dataP
             <div className="flex gap-4 items-center">
                 <div className="relative">
                     <Datepicker
+                        //@ts-ignore
                         options={options}
                         onChange={handleStartDateChange}
                         value={startDate}
@@ -81,6 +82,7 @@ export default function DataPicker({ fromDisable, toDisable, allDisable }: dataP
                 <span>to</span>
                 <div className="relative">
                     <Datepicker
+                        //@ts-ignore
                         options={{
                             ...options,
                             datepickerClassNames: "top-9 right-0 z-[9999999]",

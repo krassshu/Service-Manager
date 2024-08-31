@@ -1,5 +1,5 @@
 'use client'
-import DataPicker from "@/utils/DataPicker";
+import DataPicker from "@/UI/DataPicker";
 import SelectContractor from "@/components/Tasks/TasksOrder/NewOrderForm/SelectContractor";
 import SelectDevice from "@/components/Tasks/TasksOrder/NewOrderForm/SelectDevice/SelectDevice";
 import Button from "@/UI/Button";

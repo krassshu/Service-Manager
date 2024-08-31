@@ -1,6 +1,6 @@
-import DataPicker from "@/utils/DataPicker";
+import DataPicker from "@/UI/DataPicker";
 import PickEventRange from "@/components/Calendar/CalendarEvents/PickEventRange";
-import SelectAndShowSelected from "@/utils/SelectAndShowSelected";
+import SelectAndShowSelected from "@/UI/SelectAndShowSelected";
 import Button from "@/UI/Button";
 import SelectEventColor from "@/components/Calendar/CalendarEvents/SelectEventColor";
 
@@ -9,9 +9,8 @@ export default function CalendarEvents(){
 
     return(
         <div>
-            <h2>Create new event</h2>
-            <div>
-                <form>
+            <h2 className="text-lg">Create new event</h2>
+                <form className="mt-4">
                     <div className="mb-6">
                         <label htmlFor="title"
                                className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Event
@@ -44,7 +43,7 @@ export default function CalendarEvents(){
                         <Button>Save</Button>
                     </div>
                 </form>
-            </div>
+
         </div>
     )
 }
