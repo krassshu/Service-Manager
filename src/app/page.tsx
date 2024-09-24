@@ -1,13 +1,17 @@
-import Image from "next/image";
 import DashboardElements from "@/components/DashboardElements/DashboardElements";
 import DashboardCalendar from "@/components/DashboardElements/DashboardCalendar/DashboardCalendar";
 import DashboardTasks from "@/components/DashboardElements/DashboardTasks/DashboardTasks";
 import TaskInterface from "@/interfaces/taskInterface";
 import DashboardMessage from "@/components/DashboardElements/DashboardMessage/DashboardMessage";
+import { createClient } from '@/utils/supabase/server';
 
-export default function Home() {
+export default async function Home() {
+    const supabase = createClient();
+    const {
+        data: { user },
+    } = await supabase.auth.getUser();
 
-   const tasks:TaskInterface={
+    const tasks:TaskInterface={
         title:"Assigned tasks",
         head1:"Tasks number",
         head2:"Localization",
