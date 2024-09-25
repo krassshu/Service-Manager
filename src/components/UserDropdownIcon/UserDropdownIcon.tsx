@@ -1,5 +1,3 @@
-import Image from "next/image";
-import Link from "next/link";
 import Dropdown from "@/components/UserDropdownIcon/Dropdown/Dropdown";
 
 export default function UserDropdownIcon(){

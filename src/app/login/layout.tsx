@@ -1,13 +1,10 @@
-import {Inter} from "next/font/google";
-
 export const metadata = {
     title: 'Login Page',
     description: 'Login Page',
 };
 
-const inter = Inter({ subsets: ["latin"] });
 
-export default function LoginLayout({children,}: Readonly<{
+export default async function LoginLayout({children,}: Readonly<{
     children: React.ReactNode;
 }>) {
     return (
@@ -21,11 +18,10 @@ export default function LoginLayout({children,}: Readonly<{
                                 Sign in to your account
                             </h1>
                             {children}
-
                         </div>
                     </div>
                 </div>
             </section>
         </div>
-                        );
-                        }
+        );
+    }

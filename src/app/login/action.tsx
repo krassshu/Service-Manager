@@ -1,13 +1,15 @@
 'use server';
 
 import { createClient } from '@/utils/supabase/server';
+import { revalidatePath } from 'next/cache';
+import { redirect } from 'next/navigation';
 
-export async function loginAction(formData: FormData) {
+export async function signIn(formData: FormData) {
     const email = formData.get('email') as string;
     const password = formData.get('password') as string;
 
     if (!email || !password) {
-        throw new Error('Email and password are required');
+        return { error: 'Email and password are required' };
     }
 
     const supabase = createClient();
@@ -18,6 +20,9 @@ export async function loginAction(formData: FormData) {
     });
 
     if (error) {
-        throw new Error('Invalid email or password');
+        return { error: 'Invalid email or password' };
     }
+
+    revalidatePath('/');
+    redirect('/');
 }
